@@ -11,3 +11,8 @@ jobs:
           for file in $(find lab* -type f -name "*.ipynb"); do
             python -m nbconvert --to pdf "$file"
           done
+      - name: Upload PDFs
+        uses: actions/upload-artifact@v2
+        with:
+          name: pdfs
+          
