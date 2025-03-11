@@ -9,9 +9,9 @@ jobs:
       - uses: actions/checkout@v2
       - run: |
           for file in $(find lab* -type f -name "*.ipynb"); do
-            python -m nbconvert --to pdf "$file"
+            python -m nbconvert --to pdf --execute "$file"
           done
       - uses: actions/upload-artifact@v4
         with:
-          path: lab*.pdf
+          path: lab*/*.pdf
           
