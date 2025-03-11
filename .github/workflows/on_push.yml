@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: pip install nbconvert 
-      - run: sudo apt-get install pandoc inkscape texlive-xetex texlive-fonts-recommended texlive-generic-recommended
+      - run: sudo apt-get install pandoc inkscape texlive-xetex texlive-fonts-recommended
       - uses: actions/checkout@v2
       - run: |
           for file in $(find lab* -type f -name "*.ipynb"); do
