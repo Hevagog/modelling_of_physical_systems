@@ -11,4 +11,3 @@ jobs:
           for file in $(find lab* -type f -name "*.ipynb"); do
             python -m nbconvert --to pdf "$file"
           done
-          done
