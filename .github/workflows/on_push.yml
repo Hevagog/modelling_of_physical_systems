@@ -4,9 +4,9 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+      - run: pip install nbconvert
       - run: |
-        pip install nbconvert
-        for file in $(find . -name "*.ipynb"); do
-          echo "Converting $file"
-          python -m nbconvert --to html "$file"
-        done
+          for file in $(find . -name "*.ipynb"); do
+            echo "Converting $file"
+            python -m nbconvert --to html "$file"
+          done
