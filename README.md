@@ -1,3 +1,5 @@
 # Modelling of Physical Systems
 
-![](https://tenor.com/pp9oI08Syt1.gif)
+<p align="center">
+  <img src="assets/oia-uia.gif" width ="400" height="400"/>
+</p>
