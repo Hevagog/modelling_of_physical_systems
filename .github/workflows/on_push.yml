@@ -4,6 +4,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+      - run: sudo apt-get update
       - run: pip install nbconvert ipykernel scipy pint numpy matplotlib pandas open-atmos-jupyter-utils
       - run: sudo apt-get install pandoc inkscape texlive-xetex texlive-fonts-recommended
       - uses: actions/checkout@v2
